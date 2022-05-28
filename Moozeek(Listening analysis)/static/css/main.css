@@ -1,0 +1,180 @@
+/* Main */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1{
+    /* border-style: groove;
+    border-radius: 5cm; */
+    margin-top: 20;
+    text-align: center;
+}
+
+h4{
+    align-content: center;
+}
+
+body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+@media (min-width: 576px) {
+    .container.wide {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container.wide {
+        max-width: 1100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container.wide {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container.wide {
+        max-width: 1750px;
+    }
+}
+
+/* Website Classes */
+
+.song-title {
+    font-size: 16.5px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+
+.song-sub {
+    margin-top: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cover {
+    object-fit: cover;
+    height: 140px;
+}
+
+.cover-songs {
+    object-fit: cover;
+    height: 20px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.zoom:hover img:not(:hover) {
+    height: 140px;
+}
+
+.container-fluid{
+    justify-content:space-between;
+    display: inline-flex;
+    background:   #d2a2f3;
+
+     /* background: rgb(88, 88, 88); */
+
+    padding-top: 0;
+    margin-top: 0;
+
+}
+
+.brand-name{
+    position: flex;
+    width: 200px;
+height: 35px;
+
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+background: linear-gradient(180deg, #FF2C2C 35.94%, #BC04BF 66.67%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+    /* text-fill-color: transparent; */
+}
+.navbar-toggler{border-style: ridge;}
+
+.navbar-nav{
+    /* border-style: outset; */
+    position: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    margin-right: 0;
+
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.grad1 {
+    height: 200px;
+    background-color: whitesmoke;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(whitesmoke, rgb(250, 201, 242));
+}
+
+.mb-4{
+    /*text-align: center;*/
+    /*margin-top: 0;*/
+    /*font-size: 20px;*/
+}
+
+.text-center{
+    margin-top: 0;
+   text-align: center;
+   padding-top: 0px;
+   font-family: 'Alegreya', serif;
+
+
+
+}
+.mt-1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.mt-5{
+    /* padding-top: 0; */
+    margin-top: 0;
+}
+
+.display-4{
+    margin-top: 5px;
+    font-family: 'Alegreya', serif;
+}
+.foo{
+    background-color: #cb8cd3;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 40px;
+}
