@@ -71,15 +71,19 @@ This is a website combined with my recommendation engine, and it offers the foll
 1) Top 50 recently played tracks
 
 ![Recently played tracks](Recently%20played%20tracks.png)
+
 2) Top tracks of past 1 month, 6 months and all time
 
 ![Top tracks](top%20tracks.png)
+
 3) Top artists of past 1 month, 6 months and all time
 
 ![Top artists](top%20artists.png)
+
 4) Top tracks by artists ( All time favourite songs grouped by all time favourite artists)
 
-![Top tracks](top%20tracks.png)
+![Top tracks By Artists](top%20tracks%20by%20artists.png)
+
 5) Song Recommendation Engine using Playlist ID
 
 ![Recommendation Engine](recommendation%20engine.png)
