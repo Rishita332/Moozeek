@@ -82,7 +82,7 @@ This is a website combined with my recommendation engine, and it offers the foll
 
 4) Top tracks by artists ( All time favourite songs grouped by all time favourite artists)
 
-![Top tracks By Artists](top%20tracks%20by%20artists.png)
+![Top tracks By Artists](top%20tracks%20by%20artist.png)
 
 5) Song Recommendation Engine using Playlist ID
 
