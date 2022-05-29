@@ -58,7 +58,7 @@ In this project, I will only be implementing the content based filtering.
 Content-based filtering uses the features of each song in a playlist to find the average score of the whole playlist. Then, it recommends a song that has a score similar to the playlist but is not in the playlist.
 
 
-[![img.png](img.png)](https://github.com/Rishita332/Moozeek/blob/main/pipeline.png)
+![Pipeline](pipeline.png)
 5. Deployment Using Flask
 
 The recommendation model is deployed with the help of flask.
