@@ -63,26 +63,26 @@ Content-based filtering uses the features of each song in a playlist to find the
 
 The recommendation model is deployed with the help of flask.
 
-[![img.png](img.png)](https://github.com/Rishita332/Moozeek/blob/main/recommendation%20results.png)
+![Recommendation Results](recommendation%20results.png)
 
 ### Moozeek (Listening Analysis)
 
 This is a website combined with my recommendation engine, and it offers the following features:
 1) Top 50 recently played tracks
 
-[![img.png](img.png)](https://github.com/Rishita332/Moozeek/blob/main/Recently%20played%20tracks.png)
+![Recently played tracks](Recently%20played%20tracks.png)
 2) Top tracks of past 1 month, 6 months and all time
 
-![img_4.png](img_4.png)
+![Top tracks](top%20tracks.png)
 3) Top artists of past 1 month, 6 months and all time
 
-![img_5.png](img_5.png)
+![Top artists](top%20artists.png)
 4) Top tracks by artists ( All time favourite songs grouped by all time favourite artists)
 
-![img_6.png](img_6.png)
+![Top tracks](top%20tracks.png)
 5) Song Recommendation Engine using Playlist ID
 
-![img_2.png](img_2.png)
+![Recommendation Engine](recommendation%20engine.png)
 
 The website is deployed with the help of flask and currently runs on local host.
 
