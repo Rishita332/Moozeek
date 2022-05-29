@@ -9,7 +9,7 @@ The goal of this project is to recommend songs for a given spotify playlist ID a
 ### Recommendation Model
 The recommendation model is summarized in the `ContentBased_RecommendationSystem.ipynb` notebook. This contains the process of building a content-based filtering recommendation. The following parts were covered:
 
-1. Package Setup:
+1. _Package Setup_:
       Firstly, we performed authentication using Spotipy
 ```
 SPOTIFY_API_KEY = os.getenv('SPOTIFY_API_KEY')
@@ -19,7 +19,7 @@ spotify_headers = {"Accept": "application/json", "Authorization":"Bearer " + SPO
 client_credentials_manager = SpotifyClientCredentials(SPOTIFY_CLIENT_ID, SPOTIFY_API_KEY)
 spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 ```
-2. Preprocessing: 
+2. _Preprocessing_
 
 Since this dataset is released by Spotify, it includes a track_id that can be used to generate API calls to access the multiple information that is provided from Spotify for a given song, artist or user. To do all the API calls, we are using Spotipy, which is a lightweight Python library for the Spotify Web API.
 These are some of the audio features that are available to us for each song and I will be using them to enhance the dataset to help matching the user’s favorite playlist and to build the model. They are measured mostly in a scale of 0–1:
@@ -32,7 +32,7 @@ These are some of the audio features that are available to us for each song and 
 * Speechiness: presence of words in a song.
 * Tempo: Beats per minute (BPM).
 
-3. Feature Generation
+3. _Feature Generation_
 
 
 The first method that we will use in extracting features from tracks in a playlist is the “playlist_tracks” method. This method takes the URI from a playlist, and outputs JSON data containing all of the information about this playlist. Luckily, the Spotipy package decodes this for us, so we can parse through this data fairly easily and Pythonically.
@@ -49,7 +49,7 @@ Now that we have a list of track URIs, we can extract features from these tracks
 ```
 sp.audio_features(track_uri)[0]
 ```
-4. Content-based Filtering Recommendation
+4. _Content-based Filtering Recommendation_
 
 Recommendation systems can be split into two different classes: collaborative filtering and content-based filtering. Spotify uses both these algorithms, a hybrid recommender system, to give you that familiar but still fresh playlist.
 In this project, I will only be implementing the content based filtering.
@@ -59,7 +59,8 @@ Content-based filtering uses the features of each song in a playlist to find the
 
 
 ![Pipeline](pipeline.png)
-5. Deployment Using Flask
+
+5. _Deployment Using Flask_
 
 The recommendation model is deployed with the help of flask.
 
@@ -68,23 +69,23 @@ The recommendation model is deployed with the help of flask.
 ### Moozeek (Listening Analysis)
 
 This is a website combined with my recommendation engine, and it offers the following features:
-1) Top 50 recently played tracks
+1) _Top 50 recently played tracks_
 
 ![Recently played tracks](Recently%20played%20tracks.png)
 
-2) Top tracks of past 1 month, 6 months and all time
+2) _Top tracks of past 1 month, 6 months and all time_
 
 ![Top tracks](top%20tracks.png)
 
-3) Top artists of past 1 month, 6 months and all time
+3) _Top artists of past 1 month, 6 months and all time_
 
 ![Top artists](top%20artists.png)
 
-4) Top tracks by artists ( All time favourite songs grouped by all time favourite artists)
+4) _Top tracks by artists ( All time favourite songs grouped by all time favourite artists)_
 
 ![Top tracks By Artists](top%20tracks%20by%20artist.png)
 
-5) Song Recommendation Engine using Playlist ID
+5) _Song Recommendation Engine using Playlist ID_
 
 ![Recommendation Engine](recommendation%20engine.png)
 
